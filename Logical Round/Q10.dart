@@ -5,7 +5,7 @@ import 'dart:io';
 
 void main()
  {
-  print("Enter the value of N:");
+  print("Enter the value of n :");
   int n = int.parse(stdin.readLineSync()!);
 
   int i;
