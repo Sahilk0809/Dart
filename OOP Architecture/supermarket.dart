@@ -26,7 +26,7 @@ class Customer {
     print("Enter choice : ");
     print("Press 1 for Bakery products");
     print("Press 2 for Grocery");
-    print("Press 3 for Diary products");
+    print("Press 3 for Dairy products");
     print("Press 4 for Home appliances");
     print("Press 0 to exit");
     choice = int.parse(stdin.readLineSync()!);
