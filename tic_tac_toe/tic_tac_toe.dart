@@ -9,9 +9,11 @@ void main() {
         generateBoard();
         start();
         generateBoard();
+        winnerCheck();
       }
     }
   }
+  print(isXturn ? 'O won!' : 'X won!');
 }
 
 void generateBoard() {
@@ -27,9 +29,11 @@ void generateBoard() {
 void winnerCheck() {
   for (int i = 1; i <= coordination.length; i++) {
     for (int j = 1; j <= coordination.length; j++) {
-      if (coordination[i] == coordination[i + 1] && coordination[i + 1] == coordination[i + 2]) {
+      if (coordination[0] == coordination[1] && coordination[1] == coordination[2]) {
         winner = true;
-        print(isXturn ? 'O won!' : 'X won!');
+      }
+      else if(coordination[3] == coordination[4] && coordination[4] == coordination[5]){
+        winner = true;
       }
     }
   }
