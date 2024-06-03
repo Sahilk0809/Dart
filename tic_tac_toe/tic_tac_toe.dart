@@ -35,12 +35,30 @@ void winnerCheck() {
       else if(coordination[3] == coordination[4] && coordination[4] == coordination[5]){
         winner = true;
       }
+      else if(coordination[6] == coordination[7] && coordination[7] == coordination[8]){
+        winner = true;
+      }
+      else if(coordination[0] == coordination[4] && coordination[4] == coordination[8]){
+        winner = true;
+      }
+      else if(coordination[0] == coordination[3] && coordination[3] == coordination[6]){
+        winner = true;
+      }
+      else if(coordination[1] == coordination[4] && coordination[4] == coordination[7]){
+        winner = true;
+      }
+      else if(coordination[2] == coordination[5] && coordination[5] == coordination[8]){
+        winner = true;
+      }
+      else if(coordination[2] == coordination[4] && coordination[4] == coordination[6]){
+        winner = true;
+      }
     }
   }
 }
 
 void start() {
-  stdout.write('Enter index');
+  stdout.write('Enter index : ');
   index = int.parse(stdin.readLineSync()!);
 
   if (isXturn) {
